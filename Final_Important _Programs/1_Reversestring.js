@@ -6,7 +6,7 @@ for(let i =str.length-1; i>=0;i--){
 console.log(reverse);
 console.log([...str].reverse().join(""));
 console.log(str.split("").reverse().join(""));
-console.log(str.split(" ").map((n) => n.split("").reverse().join("")).join(" "));
+// console.log(str.split(" ").map((n) => n.split("").reverse().join("")).join(" "));
 
 //--------------------------------------------
 //Second Method
@@ -15,7 +15,7 @@ function reverseString(str) {
   return str.split("").reverse().join("");
 }
 
-console.log(reverseString("hello")); // "olleh"
+console.log(reverseString("madam")); // "madam"
 
 //--------------------------------------------
 //Using For...of
@@ -27,3 +27,4 @@ for(char of name){
   rev = char + rev;
 }
 console.log(rev)
+//--------------------------------------------

@@ -19,6 +19,23 @@ console.log(findDuplicates(numbers));
 // [2, 3]
 
 //--------------------------------------------
+//Using variable
+//--------------------------------------------
+let ar = [10, 20, 30, 20, 40, 10, 50];
+
+let seen = new Set();
+let duplicates = new Set();
+
+for (const num of ar) {
+    if (seen.has(num)) {
+        duplicates.add(num);
+    }
+
+    seen.add(num);
+}
+
+console.log([...duplicates]); // [20, 10]
+//--------------------------------------------
 //Using an object
 //--------------------------------------------
 let arr = [1, 2, 3, 2, 4, 3, 5];
@@ -30,7 +47,7 @@ for (let value of arr) {
 
 for (let value in count) {
     if (count[value] > 1) {
-        console.log(value);
+        console.log(value);//2 below 3
     }
 }
 //--------------------------------------------
@@ -60,11 +77,20 @@ for(let name of names){
   frequency[name] = (frequency[name] || 0) + 1;
 }
 
-console.log(frequency);
+console.log(frequency);//{ Alice: 3, Bob: 2, Charlie: 1, David: 1 }
 
 for(let name in frequency){
   if(frequency[name] > 1){
-    console.log(`First duplicate name: ${name}`);
+    console.log(`First duplicate name: ${name}`);//First duplicate name: Alice
     break;
   }
 }
+
+//let arr = [10, 20, 30, 20, 40, 10];
+// Iteration	                num	seen before checking	              Duplicate?	              duplicates after
+// 1	                        10	{}	                                No	                      {}
+// 2	                        20	{10}	                              No	                      {}
+// 3	                        30	{10, 20}	                          No	                      {}
+// 4	                        20	{10, 20, 30}	                      Yes	                      {20}
+// 5	                        40	{10, 20, 30}	                      No	                      {20}
+// 6	                        10	{10, 20, 30, 40}	                  Yes	                      {20, 10}
