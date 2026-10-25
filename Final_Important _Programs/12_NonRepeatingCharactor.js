@@ -1,3 +1,24 @@
+//----------------------------------------------------------------------------------------
+let num = "swiss";
+let frequency ={};
+
+for(char of num){
+  if(frequency[char]){
+    frequency[char]++;
+  }
+  else{
+    frequency[char]=1; 
+  }
+  // frequency[char] = (frequency[char] || 0 ) + 1;
+}
+
+for(char in frequency){
+  if(frequency[char]==1){
+    console.log(char);//w
+    break;
+  }
+}
+//---------------------------------------------------------------------------------------------
 function firstNonRepeatingChar(str) {
     let charCount = {};
 

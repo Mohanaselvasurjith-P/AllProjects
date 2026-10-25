@@ -8,10 +8,10 @@ let count = {};
 for (let char of str) {
     count[char] = (count[char] || 0) + 1;
 }
-        console.log(count);//{ p: 1, r: 2, o: 1, g: 2, a: 1, m: 2, i: 1, n: 1 }
+    console.log(count);//{ p: 1, r: 2, o: 1, g: 2, a: 1, m: 2, i: 1, n: 1 }
 for (let char in count) {
     if (count[char] > 1) {
-        console.log(char);//rgm
+    console.log(char);//rgm
     }
 }
 

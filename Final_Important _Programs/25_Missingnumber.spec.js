@@ -1,5 +1,6 @@
+//Missing Number in an Array at any spot
 
-let numbers = [1, 2, 4, 5];
+let numbers = [5, 2, 1, 4];
 
 let n = numbers.length + 1;
 let expectedSum = (n * (n + 1)) / 2;
@@ -9,7 +10,7 @@ let missingNumber = expectedSum - actualSum;
 console.log("Missing number:", missingNumber);
 
 //--------------------------------------------
-//Second Method
+//Second Method - Normal ordered array
 //--------------------------------------------
 let numbers1 = [1, 2, 4, 5];
 

@@ -13,4 +13,3 @@ for (let i = words.length - 1; i >= 0; i--) {
 
 console.log(reversedSentence);
 console.log(sentence.split(" ").reverse().join(" "));
-console.log(sentence.split(" ").map((n) => n.split("").reverse().join("")).join(" "));

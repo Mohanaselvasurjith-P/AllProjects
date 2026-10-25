@@ -1,6 +1,7 @@
 let x = 'Hello world';
 
 let words = x.trim().split(' ');//we can use with out trim also same result will come but trim is used to remove the extra space at the beginning and end of the string.
+console.log(words);//['Hello', 'world']
 let lastWord = words[words.length - 1];
 
 console.log(lastWord.length);

@@ -11,6 +11,19 @@ while (x > 0) {
 console.log(reverse);
 
 
+//------------------------------------------------------
+let num = 25968;
+
+let stringnum = num.toString();
+console.log(typeof(stringnum));//string
+console.log(stringnum);//25968
+
+let reversednum = Number(stringnum.split("").reverse().join(""));
+
+console.log(reversednum);//86952
+console.log(typeof(reversednum));//number
+//--------------------------------------------------------
+
 // Line-by-line explanation
 // 1. let x = 12345; — original number.
 // 2. let reverse = 0; — stores the reversed number.
@@ -37,3 +50,20 @@ console.log(reverse);
 // Data type	                                    number	                                                    string
 // Arithmetic	                                    Directly supported	                                        Usually requires conversion
 // Example + 10	                                    54331	                                                    "5432110"
+
+
+// String — ''
+// One piece of text, built character by character.
+// Example: let reverse = ''; → "olleh"
+
+// Array — []
+// An ordered collection of values.
+// Example: let result = []; → [2, 4, 6]
+
+// Number — 0
+// A numeric starting value for calculations.
+// Example: let total = 0; → 60
+
+// Object — {}
+// A collection of key-value pairs.
+// Example: let frequency = {}; → {a: 2, b: 3}
