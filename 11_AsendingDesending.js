@@ -10,13 +10,14 @@ console.log("Ascending Order: " + ascending);
 let descending = [...array].sort((a, b) => b - a);
 console.log("Descending Order: " + descending);
 
+//---------------------------------------------
 //sorting without sort()
-
+//---------------------------------------------
 let arr = [5, 2, 8, 1, 9, 3];
 
 for (let i = 0; i < arr.length; i++) {
-    for (let j = i + 1; j < arr.length; j++) {
-        //for (let j = 0; j < arr.length; j++) {//opposite of above
+    for (let j =i + 1; j < arr.length; j++) {
+        //for (let j = 0; j < arr.length; j++) {//for desending order -use this loop
         if (arr[i] > arr[j]) {   //ascending
             //if (arr[i] < arr[j]) {   //descending
             let temp = arr[i];
@@ -25,4 +26,4 @@ for (let i = 0; i < arr.length; i++) {
         }
     }
 }
-console.log("Sorted Array (Ascending): " + arr);
+console.log("Sorted Array (Ascending): " + arr);//Sorted Array (Ascending): 1,2,3,5,8,9                                    

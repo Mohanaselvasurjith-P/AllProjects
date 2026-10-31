@@ -1,6 +1,6 @@
 function isArmstrong(num) {
     let sum = 0;
-    let digits = num.toString().length;
+    let digits = num.toString().length;// 3
     let original = num;
 
     while (original > 0) {
@@ -40,3 +40,13 @@ for (let num = 1; num <= 1000; num++) {
         console.log(num);
     }
 }
+
+
+
+// 4. Remember these four operators
+// Operator	            Meaning	                                        Example	               Result
+//------------------------------------------------------------------------------------------------------------------
+// %	                Remainder	                                    153 % 10	            3
+// /	                Division	                                    153 / 10	            15.3
+// Math.floor()	        Round down to an integer	                    Math.floor(15.3)	    15
+// **	                Power	                                        5 ** 3	                125
