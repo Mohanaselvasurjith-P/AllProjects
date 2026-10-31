@@ -24,6 +24,7 @@ let result = "";
 for (const ch of str1) {
     if (!result.includes(ch)) {
         result += ch;
+        
     }
 }
 

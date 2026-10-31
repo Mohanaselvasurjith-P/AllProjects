@@ -4,7 +4,7 @@ let count = {};
 
 for (let i = 0; i < names.length; i++) {
     let name = names[i];
-
+    console.log(name);
     if (count[name] === undefined) {
         count[name] = 1;
     } else {
