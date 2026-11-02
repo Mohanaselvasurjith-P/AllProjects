@@ -18,3 +18,13 @@ for (let i = 0; i < nums.length; i++) {
 }
 
 console.log(maxCount); // 3
+
+
+// Step-by-step explanation
+// Index	nums[i]	            count	                maxCount
+// 0	    1	                1	                    1
+// 1	    1	                2	                    2
+// 2	    0	                0	                    2
+// 3	    1	                1	                    2
+// 4	    1	                2	                    2
+// 5	    1	                3	                    3
