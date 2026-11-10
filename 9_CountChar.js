@@ -55,6 +55,7 @@ let str2 = "programming";
 let count2 = {};
 
 for (let char of str2) {
+    //count2[char]=(count2[char]||0)+1
     if (count2[char] === undefined) { //undefined means a variable has been declared, but it does not currently have a value assigned to it.
         count2[char] = 1;
     } else {

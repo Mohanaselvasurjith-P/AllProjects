@@ -1,3 +1,19 @@
+let arr1 =[1,23,3,4,4,5,6,5,3,6,7,7,8,4,3,2,4,5,6,76];
+let frequency = {};
+let original = [];
+for(char of arr1){
+  frequency[char] = (frequency[char] || 0) +1;
+}
+console.log(frequency);
+
+for(char in frequency){
+  if(frequency[char]===1){
+    original.push(char);
+  }
+}
+console.log(original);
+//---------------------------------------------------------
+
 function removeDuplicates(arr) {
     return [...new Set(arr)];
 }
